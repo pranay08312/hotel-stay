@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StayFinder - Hostel Booking</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.name button{
+   border-radius: 10px;
+   width: 100px;
+   height: 50px;
+   color: rgb(0, 0, 0);
+font-weight: 700;
+   font-family: 'Times New Roman', Times, serif;
+background-color: #07bef0;
+}
+.name,button:hover{
+    background-color: #ff4d4d;
+       border-radius: 10px;
+transition: cubic-bezier(0.075, 0.82, 0.165, 1);}
+.name a{
+    text-decoration: none;
+}
+
+header h1{
+    font-size:24px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+.hero{
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1555854877-bab0e564b8d5');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.search-box{
+    background:white;
+    padding:15px;
+    border-radius:50px;
+    display:flex;
+    width:60%;
+    max-width:600px;
+}
+
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:10px;
+    font-size:16px;
+}
+
+.search-box button{
+    background:#ff4d4d;
+    border:none;
+    padding:10px 20px;
+    color:white;
+    border-radius:50px;
+    cursor:pointer;
+}
+
+.section{
+    padding:60px 8%;
+}
+
+.section h2{
+    margin-bottom:30px;
+    font-size:28px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#ff4d4d;
+    font-weight:600;
+    margin:10px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:8px 15px;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    font-size:14px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+
+
+@media(max-width:768px){
+    .hero h2{
+        font-size:28px;
+    }
+
+    .search-box{
+        width:90%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>StayFinder</h1>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./hotels.html">Hotels</a>
+        <a href="https://www.stayfinder.com/contact-us">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Find Your Perfect Stay</h2>
+    <div class="name">
+<button><a href="./hotels.html">Visit Hotels</a></button>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Popular Hostels</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/488120139/photo/modern-real-estate.jpg?s=2048x2048&w=is&k=20&c=ecn5rDY4T5q7asEVczuq5tGAv5G0zahOXtTa8OaogzY=">
+            <div class="card-content">
+                <h3>fab hotel greenwood xpress</h3>
+                <p>bangalore, India</p>
+                <div class="price">₹799 / night</div>
+                <a href="https://www.booking.com/hotel/in/fabhotel-greenwood-xpress.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771397579&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1393210647/photo/youth-park-taivani-parku-rinia-park-in-tirana-albania.jpg?s=2048x2048&w=is&k=20&c=lp7KCPD3thViwi4Nh4s8xPHiH2zKjlE9zLFbAS8u9hI=">
+            <div class="card-content">
+                <h3>cubbon suites</h3>
+                <p>Bangalore, India</p>
+                <div class="price">₹999 / night</div>
+                <a href="https://www.booking.com/hotel/in/cubbon-suites.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771397782&srpvid=c7fb2f78c7150016&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1584027449/photo/a-beautiful-cityscape-of-kolkata-showing-itc-royal-bengal-hotel.jpg?s=2048x2048&w=is&k=20&c=Kp9HKXFwlB9XCCzTUn4cJvIMkKP84Hzaw1uSREOEP10=">
+            <div class="card-content">
+                <h3>conrad-bengaluru</h3>
+                <p>banglore, India</p>
+                <div class="price">₹699 / night</div>
+                <a href="https://www.booking.com/hotel/in/conrad-bengaluru.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771398522&srpvid=804630e84e1f00b6&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/03/28/07/14/architecture-3268488_1280.jpg">
+            <div class="card-content">
+                <h3>estate,stay</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/estate-stay-riverside-coffee.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=11&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771398839&srpvid=2b513181e5dc0072&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/05/27/23/44/gleneagles-hotel-3434943_1280.jpg">
+            <div class="card-content">
+                <h3>stone,hills</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/stone-hills.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401122&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2020/03/26/15/06/scotland-4970689_1280.jpg">
+            <div class="card-content">
+                <h3>casa,cottage</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/casa-cottage-banglore.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=35&hpos=10&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401295&srpvid=c84b36506c2b026b&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/03/28/07/14/architecture-3268488_1280.jpg">
+            <div class="card-content">
+                <h3>taj-west-end</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/taj-west-end.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=29&hpos=4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2025/06/04/22/43/facade-9641925_1280.jpg">
+            <div class="card-content">
+                <h3>spektrum-hotels-amp-resorts</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/spektrum-hotels-amp-resorts.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=36&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2014/10/05/18/28/scotland-475625_1280.jpg">
+            <div class="card-content">
+                <h3>glitch-by-otherland</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/glitch-by-otherland-koramangala.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=40&hpos=15&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/11/08/11/21/channel-6778927_1280.jpg">
+            <div class="card-content">
+                <h3>laika-boutique-stay</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/laika-boutique-stay.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=6&hpos=6&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771406859&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/11/08/11/19/netherlands-6778916_1280.jpg">
+            <div class="card-content">
+                <h3>namastay-bangalore</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/namastay-bangalore.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771407031&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2019/05/26/18/27/bridge-4230946_1280.jpg">
+            <div class="card-content">
+                <h3>estate,stay</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/shangri-la-bengaluru.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=20&hpos=20&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771407165&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+
+    
+</section>
+
+<footer>
+    © 2026 StayFinder | All Rights Reserved
+</footer>
+
+</body>
+</html>

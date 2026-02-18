@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotels - StayFinder</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* Header */
+header{
+    background:#111;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:22px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+/* Page Title */
+.page-title{
+    padding:40px 8% 20px;
+}
+
+.page-title h2{
+    font-size:30px;
+}
+
+/* Hotel Grid */
+.hotels{
+    padding:20px 8% 60px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+
+/* Card */
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h3{
+    margin-bottom:5px;
+    font-size:18px;
+}
+
+.location{
+    color:gray;
+    font-size:14px;
+}
+
+.price{
+    margin:10px 0;
+    font-weight:600;
+    color:#ff4d4d;
+}
+
+.btn{
+    display:inline-block;
+    padding:8px 15px;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:1024px){
+    .hotels{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:768px){
+    .hotels{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:480px){
+    .hotels{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>StayFinder</h1>
+   <nav>
+        <a href="./index.html">Home</a>
+        <a href="./hotels.html">Hotels</a>
+        <a href="https://www.stayfinder.com/contact-us">Contact</a>
+    </nav>
+</header>
+
+<div class="page-title">
+    <h2>Available Hotels</h2>
+</div>
+
+<section class="hotels">
+
+    
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/488120139/photo/modern-real-estate.jpg?s=2048x2048&w=is&k=20&c=ecn5rDY4T5q7asEVczuq5tGAv5G0zahOXtTa8OaogzY=">
+            <div class="card-content">
+                <h3>fab hotel greenwood xpress</h3>
+                <p>bangalore, India</p>
+                <div class="price">₹799 / night</div>
+                <a href="https://www.booking.com/hotel/in/fabhotel-greenwood-xpress.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771397579&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1393210647/photo/youth-park-taivani-parku-rinia-park-in-tirana-albania.jpg?s=2048x2048&w=is&k=20&c=lp7KCPD3thViwi4Nh4s8xPHiH2zKjlE9zLFbAS8u9hI=">
+            <div class="card-content">
+                <h3>cubbon suites</h3>
+                <p>Bangalore, India</p>
+                <div class="price">₹999 / night</div>
+                <a href="https://www.booking.com/hotel/in/cubbon-suites.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771397782&srpvid=c7fb2f78c7150016&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1584027449/photo/a-beautiful-cityscape-of-kolkata-showing-itc-royal-bengal-hotel.jpg?s=2048x2048&w=is&k=20&c=Kp9HKXFwlB9XCCzTUn4cJvIMkKP84Hzaw1uSREOEP10=">
+            <div class="card-content">
+                <h3>conrad-bengaluru</h3>
+                <p>banglore, India</p>
+                <div class="price">₹699 / night</div>
+                <a href="https://www.booking.com/hotel/in/conrad-bengaluru.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771398522&srpvid=804630e84e1f00b6&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/03/28/07/14/architecture-3268488_1280.jpg">
+            <div class="card-content">
+                <h3>estate,stay</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/estate-stay-riverside-coffee.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=11&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771398839&srpvid=2b513181e5dc0072&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/05/27/23/44/gleneagles-hotel-3434943_1280.jpg">
+            <div class="card-content">
+                <h3>stone,hills</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/stone-hills.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401122&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2020/03/26/15/06/scotland-4970689_1280.jpg">
+            <div class="card-content">
+                <h3>casa,cottage</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/casa-cottage-banglore.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=35&hpos=10&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401295&srpvid=c84b36506c2b026b&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/03/28/07/14/architecture-3268488_1280.jpg">
+            <div class="card-content">
+                <h3>taj-west-end</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/taj-west-end.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=29&hpos=4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2025/06/04/22/43/facade-9641925_1280.jpg">
+            <div class="card-content">
+                <h3>spektrum-hotels-amp-resorts</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/spektrum-hotels-amp-resorts.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=36&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2014/10/05/18/28/scotland-475625_1280.jpg">
+            <div class="card-content">
+                <h3>glitch-by-otherland</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/glitch-by-otherland-koramangala.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=40&hpos=15&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/11/08/11/21/channel-6778927_1280.jpg">
+            <div class="card-content">
+                <h3>laika-boutique-stay</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/laika-boutique-stay.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=6&hpos=6&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771406859&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/11/08/11/19/netherlands-6778916_1280.jpg">
+            <div class="card-content">
+                <h3>namastay-bangalore</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/namastay-bangalore.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771407031&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2019/05/26/18/27/bridge-4230946_1280.jpg">
+            <div class="card-content">
+                <h3>estate,stay</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/shangri-la-bengaluru.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=20&hpos=20&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771407165&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+        </div>
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/05/27/23/44/gleneagles-hotel-3434943_1280.jpg">
+            <div class="card-content">
+                <h3>stone,hills</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/stone-hills.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401122&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2020/03/26/15/06/scotland-4970689_1280.jpg">
+            <div class="card-content">
+                <h3>casa,cottage</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/casa-cottage-banglore.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=35&hpos=10&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401295&srpvid=c84b36506c2b026b&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/03/28/07/14/architecture-3268488_1280.jpg">
+            <div class="card-content">
+                <h3>taj-west-end</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/taj-west-end.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=29&hpos=4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2025/06/04/22/43/facade-9641925_1280.jpg">
+            <div class="card-content">
+                <h3>spektrum-hotels-amp-resorts</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/spektrum-hotels-amp-resorts.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=36&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2014/10/05/18/28/scotland-475625_1280.jpg">
+            <div class="card-content">
+                <h3>glitch-by-otherland</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/glitch-by-otherland-koramangala.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=40&hpos=15&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/11/08/11/21/channel-6778927_1280.jpg">
+            <div class="card-content">
+                <h3>laika-boutique-stay</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/laika-boutique-stay.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=6&hpos=6&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771406859&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/11/08/11/19/netherlands-6778916_1280.jpg">
+            <div class="card-content">
+                <h3>namastay-bangalore</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/namastay-bangalore.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771407031&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+  <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/05/27/23/44/gleneagles-hotel-3434943_1280.jpg">
+            <div class="card-content">
+                <h3>stone,hills</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/stone-hills.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401122&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2020/03/26/15/06/scotland-4970689_1280.jpg">
+            <div class="card-content">
+                <h3>casa,cottage</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/casa-cottage-banglore.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=35&hpos=10&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401295&srpvid=c84b36506c2b026b&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/03/28/07/14/architecture-3268488_1280.jpg">
+            <div class="card-content">
+                <h3>taj-west-end</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/taj-west-end.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=29&hpos=4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2025/06/04/22/43/facade-9641925_1280.jpg">
+            <div class="card-content">
+                <h3>spektrum-hotels-amp-resorts</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/spektrum-hotels-amp-resorts.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=36&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2014/10/05/18/28/scotland-475625_1280.jpg">
+            <div class="card-content">
+                <h3>glitch-by-otherland</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/glitch-by-otherland-koramangala.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=40&hpos=15&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/11/08/11/21/channel-6778927_1280.jpg">
+            <div class="card-content">
+                <h3>laika-boutique-stay</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/laika-boutique-stay.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=6&hpos=6&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771406859&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/11/08/11/19/netherlands-6778916_1280.jpg">
+            <div class="card-content">
+                <h3>namastay-bangalore</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/namastay-bangalore.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771407031&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+  <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/05/27/23/44/gleneagles-hotel-3434943_1280.jpg">
+            <div class="card-content">
+                <h3>stone,hills</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/stone-hills.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=3&hpos=3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401122&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2020/03/26/15/06/scotland-4970689_1280.jpg">
+            <div class="card-content">
+                <h3>casa,cottage</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/casa-cottage-banglore.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=35&hpos=10&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401295&srpvid=c84b36506c2b026b&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/03/28/07/14/architecture-3268488_1280.jpg">
+            <div class="card-content">
+                <h3>taj-west-end</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/taj-west-end.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=29&hpos=4&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2025/06/04/22/43/facade-9641925_1280.jpg">
+            <div class="card-content">
+                <h3>spektrum-hotels-amp-resorts</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/spektrum-hotels-amp-resorts.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=36&hpos=11&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2014/10/05/18/28/scotland-475625_1280.jpg">
+            <div class="card-content">
+                <h3>glitch-by-otherland</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/glitch-by-otherland-koramangala.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=3486&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=40&hpos=15&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771401488&srpvid=a3d42f122fc700a7&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/11/08/11/21/channel-6778927_1280.jpg">
+            <div class="card-content">
+                <h3>laika-boutique-stay</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/laika-boutique-stay.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=6&hpos=6&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771406859&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2021/11/08/11/19/netherlands-6778916_1280.jpg">
+            <div class="card-content">
+                <h3>namastay-bangalore</h3>
+                <p>banglore, India</p>
+                <div class="price">₹1199 / night</div>
+                <a href="https://www.booking.com/hotel/in/namastay-bangalore.en-gb.html?aid=2276770&label=msn-kOfgTtFpIEzJrsKzNJWocg-79920914206286%3Atikwd-79921102843582%3Aloc-90%3Aneo%3Amte%3Alp116072%3Adec%3Acid578497839%3Aagid1278732577266673&sid=6eaeb116b979941821cc009c531b8536&dest_id=-2090174&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1771407031&srpvid=1f8e35fbac0a04ee&type=total&ucfs=1&" class="btn">Vist</a>
+            </div>
+</div>
+
+</section>
+
+<footer>
+    © 2026 StayFinder | All Rights Reserved
+</footer>
+
+</body>
+</html>
