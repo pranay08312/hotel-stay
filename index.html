@@ -170,6 +170,103 @@ footer{
     grid-template-columns: repeat(4, 1fr);
     gap:20px;
 }
+    /* ============================= */
+/* RESPONSIVE MEDIA QUERIES */
+/* ============================= */
+
+/* Large Tablets */
+@media (max-width: 1024px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header{
+        padding:20px 5%;
+    }
+
+    .section{
+        padding:50px 5%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:10px;
+    }
+
+    .hero{
+        height:50vh;
+        padding:20px;
+    }
+
+    .hero h2{
+        font-size:26px;
+    }
+
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box{
+        width:90%;
+        flex-direction:column;
+        border-radius:15px;
+    }
+
+    .search-box input{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .search-box button{
+        width:100%;
+        border-radius:10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px){
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+
+    header h1{
+        font-size:20px;
+    }
+
+    .btn{
+        font-size:12px;
+        padding:6px 12px;
+    }
+
+    .card img{
+        height:180px;
+    }
+
+    .name button{
+        width:120px;
+        height:45px;
+        font-size:14px;
+    }
+}
+
 
 
 @media(max-width:768px){
@@ -327,3 +424,4 @@ footer{
 
 </body>
 </html>
+
