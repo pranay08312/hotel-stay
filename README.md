@@ -1,104 +1,122 @@
- Live Preview
- https://pranay08312.github.io/hotel-stay/
+#  StayFinder – Hostel Booking Website
 
-Open index.html in your browser to view the project.
+StayFinder is a modern and responsive **Hostel Booking Website** built using pure **HTML5 and CSS3**.  
+This project showcases a clean UI design with hostel listings, pricing cards, external booking links, and a fully responsive layout.
 
- Features
+---
 
- Fully Responsive Design (Desktop, Tablet, Mobile)
+##  Live Preview
+https://pranay08312.github.io/hotel-stay/
 
- Modern UI with Clean Layout
+Open `index.html` in your browser to view the project locally.
 
- Hero Section with Call-to-Action Button
+(You can deploy using GitHub Pages for live hosting.)
 
- Hostel Cards with Images & Pricing
+---
 
- External Booking Links
+##  Features
 
- Responsive Grid Layout
+-  Modern and clean user interface  
+-  Fully responsive design (Desktop, Tablet, Mobile)  
+-  Hostel listing cards with images and pricing  
+-  External booking links  
+-  Smooth hover effects  
+-  CSS Grid layout  
+-  Google Fonts integration  
+-  Lightweight and fast loading  
 
- Smooth Hover Effects
+---
 
- Google Fonts (Poppins)
+##  Technologies Used
 
- Technologies Used
+- HTML5  
+- CSS3  
+- Google Fonts (Poppins)  
+- Unsplash & Pixabay Images  
 
-HTML5
+---
 
-CSS3
+##  Project Structure
 
-Google Fonts
-
-Unsplash & Pixabay Images
-
- Project Structure
 StayFinder/
 │
 ├── index.html
 └── README.md
- Sections Included
 
-Header Navigation (Home, Hotels, Contact)
+---
 
-Hero Section
+##  Sections Included
 
-Popular Hostels Section
+- Header Navigation (Home, Hotels, Contact)
+- Hero Section with Call-to-Action Button
+- Popular Hostels Section
+- Hostel Cards with Pricing
+- Footer
 
-Hostel Cards with Price & Visit Button
+---
 
-Footer
+##  Responsive Design
 
- Responsive Design
+This project uses CSS Media Queries for:
 
-The website uses CSS Media Queries for:
+- Large Tablets (1024px)
+- Tablets (768px)
+- Mobile Devices (480px)
 
-Large Tablets (1024px)
+The layout automatically adjusts grid columns based on screen size.
 
-Tablets (768px)
+---
 
-Mobile Devices (480px)
+##  How to Run the Project
 
- External Links Used
+1. Download or Clone the repository:
 
-Hostel booking links from Booking.com
+   git clone https://github.com/yourusername/stayfinder.git
 
-Images from Unsplash & Pixabay
+2. Open the project folder
 
-Google Fonts
+3. Double click on `index.html`
 
- Purpose of This Project
+4. View the website in your browser
 
-This project is created for:
+---
 
-Practice of HTML & CSS
+##  How to Deploy on GitHub Pages
 
-Portfolio Project
+1. Go to your GitHub repository  
+2. Click on **Settings**  
+3. Click on **Pages**  
+4. Select branch as **main**  
+5. Click **Save**  
+6. Your website will be live   
 
-Frontend Development Learning
+---
 
-UI Design Practice
+##  Project Purpose
 
- Author
+This project was built to:
 
-Pranay Kumar Reddy
-Frontend Developer
+- Practice HTML & CSS  
+- Improve frontend development skills  
+- Understand responsive layouts  
+- Build a portfolio-ready project  
 
- License
+---
 
-This project is free to use for educational purposes.
+##  Disclaimer
 
-If you want, I can also give:
+This website is created for educational purposes only.  
+All images and booking links belong to their respective owners.
 
- Professional GitHub Description
+---
 
- LinkedIn Project Description
+##  Author
 
- Resume Project Description
+Pranay Kumar Reddy  
 
- Add screenshots section in README
+GitHub: https://github.com/pranay08312  
+LinkedIn: (Add your LinkedIn profile link)
 
- Convert into multi-page project
+---
 
- Deploy using GitHub Pages step-by-step guide
-
-Tell me what you need next 
+ If you like this project, please give it a star on GitHub!
